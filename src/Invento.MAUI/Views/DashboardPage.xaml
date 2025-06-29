@@ -1,52 +1,53 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage x:Class="Invento.MAUI.Views.DashboardPage"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Dashboard">
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="20">
-            
-            <Label Text="Welcome to Invento!" 
-                   FontSize="24" 
-                   FontAttributes="Bold" 
+
+            <Label Text="Welcome to Invento!"
+                   FontSize="24"
+                   FontAttributes="Bold"
                    HorizontalOptions="Center" />
-            
+
             <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*" RowSpacing="15" ColumnSpacing="15">
-                
+
                 <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="LightBlue" Padding="20">
                     <VerticalStackLayout>
                         <Label Text="Total Products" FontAttributes="Bold" />
                         <Label x:Name="TotalProductsLabel" Text="0" FontSize="24" />
                     </VerticalStackLayout>
                 </Frame>
-                
+
                 <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="LightGreen" Padding="20">
                     <VerticalStackLayout>
                         <Label Text="Low Stock Alerts" FontAttributes="Bold" />
                         <Label x:Name="LowStockLabel" Text="0" FontSize="24" />
                     </VerticalStackLayout>
                 </Frame>
-                
+
                 <Frame Grid.Row="1" Grid.Column="0" BackgroundColor="LightCoral" Padding="20">
                     <VerticalStackLayout>
                         <Label Text="Recent Movements" FontAttributes="Bold" />
                         <Label x:Name="RecentMovementsLabel" Text="0" FontSize="24" />
                     </VerticalStackLayout>
                 </Frame>
-                
+
                 <Frame Grid.Row="1" Grid.Column="1" BackgroundColor="LightGoldenrodYellow" Padding="20">
                     <VerticalStackLayout>
                         <Label Text="Active Suppliers" FontAttributes="Bold" />
                         <Label x:Name="ActiveSuppliersLabel" Text="0" FontSize="24" />
                     </VerticalStackLayout>
                 </Frame>
-                
+
             </Grid>
-            
+
             <Button Text="Add New Product" Clicked="OnAddProductClicked" />
             <Button Text="Stock Adjustment" Clicked="OnStockAdjustmentClicked" />
             <Button Text="View Reports" Clicked="OnViewReportsClicked" />
-            
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
