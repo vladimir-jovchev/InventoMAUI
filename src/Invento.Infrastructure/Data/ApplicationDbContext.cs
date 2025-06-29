@@ -1,7 +1,7 @@
-using Microsoft.EntityFrameworkCore;
 using Invento.Shared.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace Invento.Api.Data
+namespace Invento.Infrastructure.Data
 {
 	public class ApplicationDbContext : DbContext
 	{

@@ -1,5 +1,5 @@
+using Invento.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Invento.Api.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
